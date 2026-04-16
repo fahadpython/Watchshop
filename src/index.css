@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+}
+
+/* Custom utilities for luxury feel */
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* Pulse animation for WhatsApp button */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(37, 211, 102, 0.8);
+  }
+}
+
+.btn-whatsapp {
+  animation: pulse-glow 2s infinite;
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 40px rgba(37, 211, 102, 1);
+  background-color: #20BA5C; /* Slightly darker green on hover */
+}
+
+/* Image hover effect */
+.watch-card-img {
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.watch-card:hover .watch-card-img {
+  transform: scale(1.05);
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Timepieces | Exclusive Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  </head>
+  <body class="bg-black text-white font-sans antialiased selection:bg-white/30">
+    
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <h1 class="font-serif text-2xl tracking-widest uppercase">Chrono<span class="text-white/50">Lux</span></h1>
+        <div class="text-xs tracking-[0.2em] uppercase text-white/50">Private Collection</div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-40 pb-20 px-6 max-w-7xl mx-auto text-center">
+      <h2 class="font-serif text-5xl md:text-7xl font-light mb-6 tracking-tight">The Masterpiece <br/><span class="italic text-white/70">Collection</span></h2>
+      <p class="text-white/60 max-w-xl mx-auto font-light leading-relaxed mb-10">
+        Discover our curated selection of premium timepieces. Uncompromising quality, exceptional craftsmanship.
+      </p>
+      <div class="h-px w-24 bg-white/20 mx-auto"></div>
+    </section>
+
+    <!-- Catalog Grid -->
+    <main class="max-w-7xl mx-auto px-6 pb-32">
+      <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+        <!-- Loading State -->
+        <div id="loading-indicator" class="col-span-full text-center py-20 text-white/50 font-light tracking-widest uppercase text-sm">
+          Curating collection...
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-12 text-center text-white/40 text-xs tracking-widest uppercase">
+      <p>&copy; 2024 ChronoLux. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+
